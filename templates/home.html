@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-image: url("C:/Users/Admin/Pictures/images.jpg"); /* Ensure the correct image format */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white; /* Change text color for better visibility */
+      }
+      .container {
+        text-align: center;
+        margin-top: 100px; /* Add margin to position content */
+        background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for readability */
+        padding: 50px; /* Padding for content */
+        border-radius: 10px; /* Rounded corners */
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Authentication System in Flask</h1>
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg">Login</a>
+        <br><br>
+        <a href="{{ url_for('register') }}" class="btn btn-secondary btn-lg">Register</a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
